@@ -1,0 +1,40 @@
+Q1.What is Spring Framework?
+Ans:The Spring Framework provides a comprehensive programming and configuration model for modern Java-based enterprise applications - on any kind of deployment platform.
+
+Q2.What are the features of Spring Framework?
+Ans: The feautres of spring framework is:
+1)Inversion of control(IOC)
+2)Dependency Injection(DI)
+3)Aspect-Oriented Programming(AOP).
+4)Transaction Management.
+
+Q3.What is a Spring configuration file?
+Ans:Spring bean configuration file contains spring bean configurations, dependent value configurations, and other miscellaneous configurations. Any name can be given to Spring Bean configuration file with .xml extension.
+
+Q4.What do you mean by IoC Container?
+Ans:The IoC container is responsible to instantiate, configure and assemble the objects.
+
+Q5.What do you understand by Dependency Injection?
+Ans:Dependency Injection (DI) is a design pattern that removes the dependency from the programming code so that it can be easy to manage and test the application.
+
+Q6.Explain the difference between constructor and setter injection?
+Ans:There are many key differences between constructor injection and setter injection.
+
+Partial dependency: can be injected using setter injection but it is not possible by constructor. Suppose there are 3 properties in a class, having 3 arg constructor and setters methods. In such case, if you want to pass information for only one property, it is possible by setter method only.
+Overriding: Setter injection overrides the constructor injection. If we use both constructor and setter injection, IOC container will use the setter injection.
+Changes: We can easily change the value by setter injection. It doesn't create a new bean instance always like constructor. So setter injection is flexible than constructor injection.
+
+Q7.What are Spring Beans?
+Ans:A Java class whose object is created and managed by the Spring Container is called a Spring Bean.
+
+Q8.What are the bean scopes available in Spring?
+Ans: There are five types of spring bean scopes:
+
+singleton - only one instance of the spring bean will be created for the spring container. This is the default spring bean scope. While using this scope, make sure bean doesn’t have shared instance variables otherwise it might lead to data inconsistency issues.
+prototype – A new instance will be created every time the bean is requested from the spring container.
+request – This is same as prototype scope, however it’s meant to be used for web applications. A new instance of the bean will be created for each HTTP request.
+session – A new bean will be created for each HTTP session by the container.
+global-session – This is used to create global session beans for Portlet applications.
+
+Q10.Explain Bean life cycle in Spring Bean Factory Container.
+Ans:Bean life cycle is managed by the spring container. When we run the program then, first of all, the spring container gets started.
